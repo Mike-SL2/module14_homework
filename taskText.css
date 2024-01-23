@@ -1,0 +1,99 @@
+﻿body {
+  background: oldlace;
+}
+.centerWrap {
+  width: 60vw;
+}
+h2,
+h3,
+.centerWrap {
+  margin: 1vw auto 1vw;
+}
+h2,
+h3,
+.warning,
+.center {
+  text-align: center;
+  margin-top: 1vw;
+}
+h2 {
+  width: 11ch;
+  font-size: 1.5vw;
+}
+h3 {
+  background: white;
+  box-shadow: 1ch 1ch 0px 0px gray;
+  width: 60ch;
+  border: 1px solid red;
+  padding: 1vw;
+  font-size: 1.2vw;
+}
+.taskText,
+.labelcaption {
+  font-size: 1.15vw;
+  margin: 0.3vw 0px 0px 0px;
+}
+
+.taskText::first-letter {
+  color: darkred;
+  padding-left: 1ch;
+  font-weight: 600;
+}
+.underline {
+  text-decoration: underline;
+}
+.blueColor {
+  color: blue;
+}
+
+.requestFormBlock {
+  padding: 1vw;
+  border: 0.3vw solid transparent;
+  border-color: olive green lime blue;
+}
+.labelcaption {
+  margin: 0px 0px 0.5vw 0px;
+}
+.warning,
+.buttonRequest,
+.formField,
+.pictureBlock {
+  font-size: 1.5vw;
+  padding: 1vw;
+}
+.formField {
+  width: 7ch;
+}
+
+.warning {
+  background: white;
+  box-shadow: 1ch 1ch 0px 0px gray;
+  cursor: pointer;
+  border: 0.15vw solid red;
+  display: none;
+}
+.pictureBlock,
+.requestFormBlock {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 0.5vw;
+}
+
+.receivedPicture {
+  width: 9vw;
+  margin: 0.5vh 0px 0.5vh 0px;
+}
+.marginPlus {
+  margin-left: 8vw;
+}
+.baYan {
+  height: 10vw;
+  overflow-y: hidden;
+  transition-property: height;
+  transition-duration: 1000ms;
+}
+.baYan:hover {
+  height: calc(30vw + 6em);
+}

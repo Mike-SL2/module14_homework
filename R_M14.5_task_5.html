@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="taskText.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M14.5_task_5</title>
+  </head>
+  <body>
+    <div class="centerWrap">
+      <h2>Задание 5</h2>
+      <hr />
+      <div class="baYan">
+        <p class="taskText">
+          Написать код приложения, интерфейс которого состоит из двух input и
+          кнопки. В input можно ввести любое число.<br />
+        </p>
+        <ul>
+          <li class="taskText">Заголовок первого input — «номер страницы».</li>
+          <li class="taskText">Заголовок второго input — «лимит».</li>
+          <li class="taskText">Заголовок кнопки — «запрос».</li>
+        </ul>
+        <p class="taskText">При клике на кнопку происходит следующее:</p>
+
+        <p class="taskText"></p>
+        <ul>
+          <li class="taskText">
+            Если число в первом input не попадает в диапазон от 1 до 10 или не
+            является числом — выводить ниже текст «Номер страницы вне диапазона
+            от 1 до 10»;
+          </li>
+          <li class="taskText">
+            Если число во втором input не попадает в диапазон от 1 до 10 или не
+            является числом — выводить ниже текст «Лимит вне диапазона от 1 до
+            10»;
+          </li>
+          <li class="taskText">
+            Если и первый, и второй input не в диапазонах или не являются
+            числами — выводить ниже текст «Номер страницы и лимит вне диапазона
+            от 1 до 10»;
+          </li>
+          <li class="taskText">
+            Если числа попадают в диапазон от 1 до 10 — сделать запрос по URL
+            https://jsonplaceholder.typicode.com/photos?_page=0&_limit=5, где
+            GET-параметр _page — это число из первого input, а GET-параметр
+            _limit — это введённое число второго input.
+          </li>
+        </ul>
+
+        <p class="taskText">
+          Пример. Если пользователь ввёл 5 и 7, то запрос будет вида <br /><span
+            class="blueColor marginPlus"
+            >https://jsonplaceholder.typicode.com/photos?_page=5&_limit=7</span
+          >. <br />После получения данных вывести список картинок на экран.
+        </p>
+        <p class="taskText">
+          Если пользователь перезагрузил страницу, то ему должны показываться
+          картинки из последнего успешно выполненного запроса (использовать
+          localStorage).
+        </p>
+
+        <p></p>
+        <p class="taskText">Удачи!</p>
+      </div>
+      <hr />
+      <div class="center">
+        <div class="requestFormBlock">
+          <div>
+            <div class="labelcaption">
+              <label for="inputPageNumber">номер страницы</label>
+            </div>
+            <input
+              type="text"
+              class="formField"
+              id="inputPageNumber"
+              placeholder="**"
+              title="номер страницы"
+            />
+          </div>
+
+          <div>
+            <div class="labelcaption">
+              <label for="inputLimit">лимит</label>
+            </div>
+            <input
+              type="text"
+              class="formField"
+              id="inputLimit"
+              placeholder="**"
+              title="лимит"
+            />
+          </div>
+
+          <div>
+            <div class="labelcaption">
+              <label for="requestButton">&nbsp;</label>
+            </div>
+            <button
+              class="buttonRequest"
+              type="submit"
+              id="requestButton"
+              title="запрос"
+            >
+              запрос
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="warning"></div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="pictureBlock"></div>
+    </div>
+    <script src="R_M14.5_task_5.js"></script>
+  </body>
+</html>

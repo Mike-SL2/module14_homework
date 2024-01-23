@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="taskText.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M14.2_task_3</title>
+  </head>
+  <body>
+    <div class="centerWrap">
+      <h2>Задание 3</h2>
+      <hr />
+      <p class="taskText">
+        Напишите код приложения, интерфейс которого представляет собой input и
+        кнопку. В input можно ввести любое число.
+      </p>
+      <p class="taskText">При клике на кнопку происходит следующее:</p>
+      <p class="taskText">
+        Если число не попадает в диапазон от 1 до 10 — выводить ниже текст
+        «число вне диапазона от 1 до 10».
+      </p>
+      <p class="taskText">
+        Если число попадает в диапазон от 1 до 10 — сделать запрос c помощью XHR
+        по URL
+        <span class="blueColor">
+          https://jsonplaceholder.typicode.com/photos?_limit=5</span
+        >, где get-параметр limit — это введённое число.
+      </p>
+      <p class="taskText">
+        <span class="underline">Пример. </span> Если пользователь ввёл 8, то
+        запрос будет вида: <br />
+        <span class="underline marginPlus blueColor"
+          >https://jsonplaceholder.typicode.com/photos?_limit=8</span
+        >.
+      </p>
+      <p class="taskText">
+        После получения данных вывести ниже картинки на экран.
+      </p>
+      <hr />
+      <div class="center">
+        <div class="requestFormBlock">
+          <input
+            class="formField"
+            placeholder="XX"
+            type="number"
+            name="number"
+          />
+          <button class="buttonRequest">Запросить</button>
+        </div>
+        <br />
+        <div class="warning"></div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="pictureBlock"></div>
+    </div>
+    <script src="R_M14.2_task_3.js"></script>
+  </body>
+</html>
